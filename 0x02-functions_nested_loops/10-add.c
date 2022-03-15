@@ -1,36 +1,16 @@
 #include "main.h"
-#include <stdio.h>
-
 
 /**
- * main - program that prints the numbers from 00 to 99
- * Numbers must be separated by ,followed by a space
- * Numbers should be printed in ascending order with 2 digits
- * You can only use the putchar function
- * Return: 0
+ * add - function that adds two integers and returns the result.
+ * @n1: input integer 1
+ * @n2: input integer 2
+ * Return: int.
  */
 
-int main(void)
+int add(int n1, int n2)
 {
-int n1 = 48;
-int n2 = 48;
-int com = 44;
-while (n1 <= 57)
-{
-n2 = 48;
-while (n2 <= 57)
-{
-putchar(n1);
-putchar(n2);
-if (n1 != 57 || n2 != 57)
-{
-putchar(com);
-putchar(32);
-}
-n2 += 1;
-}
-n1 += 1;
-}
-putchar('\n');
-return (0);
+	int res;
+
+	res = n1 + n2;
+	return (res);
 }
