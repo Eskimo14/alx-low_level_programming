@@ -1,27 +1,26 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * test_islower - Test the _islower function
- *
- * @n: Number to pass to _islower function
+ * main - program that prints the alphabet in lowercase, and then in uppercase,
+ * You can only use the putchar
+ * Return: 0
  */
-void test_islower(int n)
-{
-	int r;
 
-	r = _islower(n);
-	_putchar(r + '0');
-	_putchar('\n');
-}
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
 int main(void)
 {
-	test_islower('H');
-	return (0);
+int lw = 'a';
+int up = 'A';
+while (lw <= 'z')
+{
+putchar(lw);
+lw += 1;
+}
+while (up <= 'Z')
+{
+putchar(up);
+up += 1;
+}
+putchar('\n');
+return (0);
 }
  
