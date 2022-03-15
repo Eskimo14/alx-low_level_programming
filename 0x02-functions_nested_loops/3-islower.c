@@ -1,26 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - program that prints the alphabet in lowercase, and then in uppercase,
- * You can only use the putchar
- * Return: 0
+ * _islower - function that checks for lowercase character.
+ * @c: The input character to check
+ * Return: int.
  */
 
-int main(void)
+int _islower(int c)
 {
-int lw = 'a';
-int up = 'A';
-while (lw <= 'z')
-{
-putchar(lw);
-lw += 1;
-}
-while (up <= 'Z')
-{
-putchar(up);
-up += 1;
-}
-putchar('\n');
-return (0);
+	if (c >= 97 && c <= 122)
+		return (1);
+	else
+		return (0);
 }
  
