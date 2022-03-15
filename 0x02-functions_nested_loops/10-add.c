@@ -1,4 +1,6 @@
+#include "main.h"
 #include <stdio.h>
+
 
 /**
  * main - program that prints the numbers from 00 to 99
