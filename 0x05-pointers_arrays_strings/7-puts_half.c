@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * puts_half - lenght of string
@@ -21,3 +21,4 @@ void puts_half(char *str)
 		j++;
 	}
 	_putchar('\n');
+}
